@@ -103,7 +103,8 @@ body {
     font-size: 30px;
 }
 
-button {
+button,
+.final-score {
     position: absolute;
     width: 200px;
     left: 50%;
@@ -140,6 +141,13 @@ i {
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
+
+.final-score {
+  top: 531px;
+  top: 531px;
+  border: 1px solid black;
+  text-align: center;
+}
 
 .dice {
     position: absolute;

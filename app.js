@@ -45,8 +45,16 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         scores[activePlayer] += roundScore;
         //2. Update UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+        var input = document.querySelector('.final-score').value;
+        var winningScore;
+
+        if (input) {
+          winningScore = input;
+        } else {
+          winningScore = 100;
+        }
         //3. Check if player won game
-        if (scores[activePlayer] >= 10) {
+        if (scores[activePlayer] >= input) {
           document.getElementById('dice-1').style.display = 'none';
           document.getElementById('dice-2').style.display = 'none';
 
